@@ -1,0 +1,11 @@
+#Network one
+    keras.layers.Flatten(input_shape=(127,127,3)),
+    keras.layers.Dense(512, activation=tf.nn.relu),
+    keras.layers.Dense(260, activation=tf.nn.relu),
+    keras.layers.Dense(24, activation=tf.nn.relu),
+    keras.layers.Dense(2, activation=tf.nn.softmax),
+#Network two:
+    keras.layers.Flatten(input_shape=(127,127,3)),
+    keras.layers.Dense(512, activation=tf.nn.relu),
+    keras.layers.Dense(512, activation=tf.nn.relu),
+    keras.layers.Dense(2, activation=tf.nn.softmax),
